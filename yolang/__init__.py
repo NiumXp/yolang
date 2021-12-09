@@ -3,7 +3,13 @@ __all__ = (
     "tokenize",
     "Token",
     "TokenType",
+    "utils",
+    "CacheIterator",
+    "TokensIterator",
 )
 
 from . import tokenizer
-from tokenizer import tokenize, Token, TokenType
+from .tokenizer import tokenize, Token, TokenType
+
+from . import utils
+from .utils import CacheIterator, TokensIterator
